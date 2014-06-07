@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:clickable="true">
+
+
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/page6basic" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Title Page"
+        android:id="@+id/buttonNext6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:layout_marginBottom="22dp"
+        android:background="@anim/gold_button"
+        android:onClick="jumpToPageTitle" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Start Over"
+        android:id="@+id/buttonPrev6"
+        android:layout_alignTop="@+id/buttonNext6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:background="@anim/gold_button"
+        android:onClick="jumpToPageOne" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:id="@+id/buttonClue6"
+        android:layout_alignTop="@+id/buttonNext6"
+        android:layout_centerHorizontal="true"
+        android:background="@anim/gold_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&quot;But when Jimmy's mother saw what he had done, she clasped her hands and smiled a smile from here to Sunday. 'Oh, thank you, Jimmy. I always wanted a rhododendron bush planted just there. Here's $5.00 for digging that hole.'&quot;"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonPlaySound6"
+        android:layout_above="@+id/buttonClue6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/playsoundbuttongradianoff" />
+
+    <ImageButton
+        android:layout_width="280dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageButton1Pg6"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

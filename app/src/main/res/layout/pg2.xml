@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:clickable="true">
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/buttonNext2"
+        android:layout_marginBottom="21dp"
+        android:background="@anim/gold_button"
+        android:onClick="jumpToPageThree"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/webView2"
+        android:layout_alignEnd="@+id/webView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/buttonPrev2"
+        android:background="@anim/gold_button"
+        android:onClick="jumpToPageOne"
+        android:layout_alignTop="@+id/buttonClue2"
+        android:layout_alignLeft="@+id/webView2"
+        android:layout_alignStart="@+id/webView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:id="@+id/buttonClue2"
+        android:layout_alignTop="@+id/buttonNext2"
+        android:layout_centerHorizontal="true"
+        android:background="@anim/gold_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&quot;So the next day Jimmy began to dig. He dug until the hole was deep and the dirt pile was high.&quot;"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp" />
+
+    <WebView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false" />
+
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageButton1Pg2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:layout_marginTop="0dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonPlaySound2"
+        android:layout_above="@+id/buttonClue2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/playsoundbuttongradianoff" />
+</RelativeLayout>
